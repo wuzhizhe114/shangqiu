@@ -9,6 +9,7 @@ import MuseUI from 'muse-ui'; // ui 框架
 import Message from 'muse-ui-message'; // 弹窗
 import 'muse-ui/dist/muse-ui.css';
 import theme from 'muse-ui/lib/theme'; // 主题
+import '@/assets/css/style.css';
 
 // 挂载
 Vue.use(MuseUI);

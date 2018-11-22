@@ -1,0 +1,42 @@
+/*
+ * @Author: chengh@ebs.org.cn 
+ * @Date: 2018-11-22 16:34:18 
+ * @Last Modified by: chengh@ebs.org.cn
+ * @Last Modified time: 2018-11-22 18:14:46
+ */
+
+html {
+  font-size: 13.33333333vw;
+}
+body {
+  min-width: 320px;
+  max-width: 750px;
+}
+
+/* 工具类 */
+.theme-color {
+  color: #f29e2e;
+}
+.theme-bg {
+  background-color: #f29e2e;
+}
+.pr {
+  position: relative;
+}
+
+/* 头部 */
+.p-header .mu-appbar-left {
+  margin-left: 0;
+}
+
+/* 底部 */
+.p-footer .mu-flat-button .mu-button-wrapper {
+  padding: 0;
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 92px;
+  }
+}

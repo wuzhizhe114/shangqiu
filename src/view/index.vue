@@ -1,9 +1,31 @@
 <!-- 首页 -->
 <template>
   <div>
-    <p-header></p-header>
-    <router-view></router-view>
-    <p-footer class="p-footer"></p-footer>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
+    <p>shouye</p>
   </div>
 </template>
 
@@ -11,9 +33,8 @@
 import pHeader from "@/components/pHeader";
 import pFooter from "@/components/pFooter";
 export default {
-  data () {
-    return {
-    };
+  data() {
+    return {};
   },
 
   components: {
@@ -23,22 +44,11 @@ export default {
 
   computed: {},
 
-  mounted(){
+  mounted() {},
 
-  },
-
-  methods: {
-    
-  }
-}
+  methods: {}
+};
 </script>
 
 <style scoped>
-.p-footer {
-  position: fixed;
-  width: 100%;
-  max-width: 750px;
-  bottom: 0;
-  left: 0;
-}
 </style>

@@ -1,35 +1,42 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+    <p-header></p-header>
+    <router-view class="body"></router-view>
+    <p-footer></p-footer>
   </div>
 </template>
 
 <script>
+import pHeader from "@/components/pHeader";
+import pFooter from "@/components/pFooter";
 export default {
-  name: 'App',
-  data(){
+  name: "App",
+  data() {
     return {
-      that: null
-    }
+    };
   },
-  mounted(){
-    this.that = this;
+  components: {
+    pHeader,
+    pFooter
+  },
+  mounted() {
   }
-}
+};
 </script>
 
 <style>
-  html {
-    font-size:13.33333333vw;
-  }
-  body {
-    min-width: 320px;
-    max-width: 750px;
-  }
-  @media (min-width: 560px) {
-    html {
-      font-size: 54px;
-    }
-  }
+html,body {
+  height: 100%;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  flex: 1;
+  overflow-y: scroll;
+  margin-bottom: -0.6rem;
+}
 </style>
