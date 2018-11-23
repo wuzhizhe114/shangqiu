@@ -37,6 +37,6 @@ html,body {
 .body {
   flex: 1;
   overflow-y: scroll;
-  margin-bottom: -0.6rem;
+  margin-bottom: -0.72rem;
 }
 </style>

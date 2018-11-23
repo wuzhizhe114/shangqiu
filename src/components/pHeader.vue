@@ -3,18 +3,15 @@
   <div class="p-header">
     <mu-appbar style="width: 100%;" z-depth="1" color="primary">
       <mu-button icon slot="left" @click="open">
-        <!-- <mu-icon value="link"></mu-icon> -->
-        <img class="saoma" src="../assets/images/saoma.png" alt="">
+        <!-- <img class="saoma" src="../assets/images/saoma.png" alt=""> -->
+        <i class="iconfont">&#xe7c6;</i>
       </mu-button>
-      <mu-text-field slot="default" v-model="search" @blur="changeSearch"></mu-text-field>
+      <mu-text-field slot="default" placeholder="搜索商户或商品" v-model="search" @blur="changeSearch">
+        <i class="iconfont">&#xe69d;</i>
+      </mu-text-field>
       <mu-button icon class="message" slot="right">
         <mu-icon value="notifications"></mu-icon>
       </mu-button>
-      <!-- <mu-badge slot="right" content="0" circle badge-class="" color="secondary">
-        <mu-button icon>
-          <mu-icon value="notifications"></mu-icon>
-        </mu-button>
-      </mu-badge> -->
     </mu-appbar>
   </div>
 </template>
@@ -23,7 +20,7 @@
 export default {
   data() {
     return {
-      search:'123'
+      search:''
     };
   },
 
@@ -41,29 +38,40 @@ export default {
 </script>
 
 <style>
-.p-header .saoma {
-  width: 0.4rem;
+.p-header .mu-appbar-left {
+  padding-left: 0;
 }
+.p-header .mu-input__focus {
+  color: #f29e2e;
+}
+
 .p-header .mu-appbar-title {
   line-height: 1;
   padding: 0;
 }
+.p-header .iconfont{
+  font-size: 0.4rem;
+}
 .mu-text-field.mu-input-content > div {
   display: none;
 }
-/* .p-header .mu-appbar-title .mu-input__focus {
-  color: #000;
-} */
 .p-header .mu-appbar-title .mu-input {
-  padding: 0.08rem 0 0;
+  padding: 0;
   margin: 0;
   width: 100%;
   height: 0.48rem;
 }
+.p-header .mu-appbar-title .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 0.15rem;
+  transform: translate(0%,-50%);
+  font-size: 0.5rem;
+}
 .p-header .mu-input .mu-text-field-input {
   background-color: #fff;
   border-radius: 3px;
-  padding-left: 0.3rem;
+  padding-left: 0.75rem;
 }
 .p-header .message .material-icons {
   position: relative;
