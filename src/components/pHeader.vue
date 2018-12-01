@@ -1,16 +1,20 @@
 <!-- 头部 -->
 <template>
   <div class="p-header">
-    <mu-appbar style="width: 100%;" z-depth="1" color="primary">
+    <mu-appbar style="width: 100%;" z-depth="0" color="primary">
       <mu-button icon slot="left" @click="open">
         <!-- <img class="saoma" src="../assets/images/saoma.png" alt=""> -->
         <i class="iconfont">&#xe7c6;</i>
       </mu-button>
-      <mu-text-field slot="default" placeholder="搜索商户或商品" v-model="search" @blur="changeSearch">
+      <!-- <mu-text-field slot="default" placeholder="搜索商户或商品" v-model="search" @blur="changeSearch">
         <i class="iconfont">&#xe69d;</i>
-      </mu-text-field>
+      </mu-text-field> -->
+      <div class="input-box pr">
+        <input type="text" class="square" placeholder="搜索商户或者商品，共4411钟商品">
+        <i class="iconfont icon-magnifier gray-color"></i>
+      </div>
       <mu-button icon class="message" slot="right">
-        <mu-icon value="notifications"></mu-icon>
+        <i class="iconfont icon-xiaoxi"></i>
       </mu-button>
     </mu-appbar>
   </div>
@@ -41,9 +45,6 @@ export default {
 .p-header .mu-appbar-left {
   padding-left: 0;
 }
-.p-header .mu-input__focus {
-  color: #f29e2e;
-}
 
 .p-header .mu-appbar-title {
   line-height: 1;
@@ -52,7 +53,17 @@ export default {
 .p-header .iconfont{
   font-size: 0.4rem;
 }
-.mu-text-field.mu-input-content > div {
+.p-header .input-box .icon-magnifier {
+  position: absolute;
+  top: 50%;
+  left: 0.1rem;
+  transform: translateY(-50%);
+}
+.p-header .input-box .square {
+  padding-left: 0.6rem;
+  font-size: 0.24rem;
+}
+/* .mu-text-field.mu-input-content > div {
   display: none;
 }
 .p-header .mu-appbar-title .mu-input {
@@ -85,5 +96,5 @@ export default {
   height: 0;
   border-radius: 50%;
   border: 4px solid #f00;
-}
+} */
 </style>

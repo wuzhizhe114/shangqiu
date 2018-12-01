@@ -9,7 +9,8 @@ import MuseUI from 'muse-ui'; // ui 框架
 import Message from 'muse-ui-message'; // 弹窗
 import 'muse-ui/dist/muse-ui.css';
 import theme from 'muse-ui/lib/theme'; // 主题
-import '@/assets/iconfont/iconfont.css'
+import '@/assets/iconfont/iconfont.css';
+import '@/assets/css/resetMuse.css';
 import '@/assets/css/style.css';
 
 // 挂载
@@ -18,7 +19,7 @@ Vue.use(Message);
 
 // 新增主题
 theme.add('teal', {
-  primary: '#f29e2e',
+  primary: '#fa595e',
   secondary: '#ff4081',
   success: '#4caf50',
   warning: '#ffeb3b',

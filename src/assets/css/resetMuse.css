@@ -1,0 +1,39 @@
+
+/* tab 栏 */
+.mu-tabs {
+  color: #666;
+  border-bottom: 1px solid #eee;
+  font-size: 0.28rem;
+}
+.mu-tab-active {
+  color: #fa595e;
+}
+
+/* 按钮 */
+.mu-raised-button {
+  min-width: auto;
+  font-size: 0.28rem;
+  border-radius: 0.6rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  box-shadow: none;
+  background-color: #bfbfbf;
+}
+.mu-raised-button:active {
+  box-shadow: none;
+}
+.mu-raised-button.input {
+  line-height: 0.6rem;
+  height: 0.6rem;
+  font-size: 0.24rem;
+}
+.mu-raised-button.h42 {
+  line-height: 0.42rem;
+  height: 0.42rem;
+  font-size: 0.24rem;
+}
+
+/* 底部tab 栏 */
+.mu-bottom-nav {
+  width: 100%;
+}
