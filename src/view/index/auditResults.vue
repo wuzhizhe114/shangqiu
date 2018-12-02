@@ -54,6 +54,7 @@ export default {
 }
 .result-box .img {
   width: 5rem;
+  height: 3rem;
 }
 .result-box .tips {
   padding: 0.6rem;

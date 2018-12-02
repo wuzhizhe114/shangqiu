@@ -2,7 +2,7 @@
   <div id="app">
     <p-header v-show="$route.meta.showHeader"></p-header>
     <router-view class="body"></router-view>
-    <p-footer v-show="$route.meta.showFooter"></p-footer>
+    <p-footer v-show="$route.meta.showFooter" :activeItem="$route.meta.showFooterActive"></p-footer>
   </div>
 </template>
 
@@ -37,6 +37,6 @@ html,body {
 .body {
   flex: 1;
   overflow-y: scroll;
-  margin-bottom: -0.72rem;
+  /* margin-bottom: -0.72rem; */
 }
 </style>

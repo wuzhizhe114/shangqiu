@@ -9,6 +9,22 @@
   color: #fa595e;
 }
 
+/* 轮播图 */
+.mu-carousel {
+  height: 100%;
+}
+.mu-carousel-indicators {
+  height: 0.56rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: flex-end;
+}
+
+.mu-carousel-indicator-button {
+  width: 0.12rem;
+  height: 0.12rem;
+  margin-left: 0;
+}
+
 /* 按钮 */
 .mu-raised-button {
   min-width: auto;
@@ -31,6 +47,14 @@
   line-height: 0.42rem;
   height: 0.42rem;
   font-size: 0.24rem;
+}
+
+/* 复选框 */
+.mu-checkbox-checked {
+  color: #fa595e;
+}
+.piliang .mu-checkbox {
+  color: #fff;
 }
 
 /* 底部tab 栏 */

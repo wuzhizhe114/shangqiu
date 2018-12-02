@@ -2,16 +2,23 @@
  * @Author: chengh@ebs.org.cn 
  * @Date: 2018-11-22 16:34:18 
  * @Last Modified by: chengh@ebs.org.cn
- * @Last Modified time: 2018-12-01 22:00:39
+ * @Last Modified time: 2018-12-02 18:27:07
  */
 
 p {
   margin: 0;
 }
 
+.body a {
+  color: #333;
+}
+
 img {
   width: 100%;
   height: 100%;
+}
+table {
+  border-collapse: collapse;
 }
 
 html {
@@ -91,19 +98,59 @@ input.square {
   background-color: #fff;
   /* box-shadow: 1px 0 3px 0 #acacac; */
 }
+.box-sh {
+  box-shadow: 0px 0.1px 0.3px #acacac;
+}
+
 .fb-bg {
   background: #fbfbfb;
 }
 .gray-color {
   color: #969696
 }
+.gray-color2 {
+  color: #e5e5e5
+}
 
 .color-white {
   color: #fff;
 }
+.yellow-color {
+  color: #f2cb2e;
+}
+.color-orange {
+  color: #f29e2e;
+}
+.color-blue {
+  color: #358ef2;
+}
+.color-blue2 {
+  color: #53cad1;
+}
+.color-999 {
+  color: #999;
+}
+.color-666 {
+  color: #666;
+}
+
+.w-100 {
+ width: 100%; 
+}
+
+/* 虚线底边框 */
+.dash-b-b {
+  border-bottom: 1px dashed #bdc5cb;
+}
 
 .gray-border {
   border: 1px solid #bdc5cb;
+}
+.gray-b-b {
+  border-bottom: 1px solid #bdc5cb;
+}
+.gray-b-b2 {
+  border-bottom: 1px solid #e5e5e5;
 }
 /* 对齐方式 */
 .text-center {
@@ -116,14 +163,12 @@ input.square {
   text-align: right;
 }
 
-/* 虚线底边框 */
-.dash-b-b {
-  border-bottom: 1px dashed #bdc5cb;
-}
-
 /* 圆角 */
 .br-3 {
   border-radius: 3px;
+}
+.br-half {
+  border-radius: 50%;
 }
 
 /* 字体形态 */
@@ -143,6 +188,10 @@ input.square {
 .pd-lr-30 {
   padding: 0 0.3rem;
 }
+.pt-60 {
+  padding-top: 0.6rem;
+}
+
 .pd-30 {
   padding: 0.3rem;
 }
@@ -153,14 +202,36 @@ input.square {
 .pd-lr-20 {
   padding: 0 0.2rem;
 }
+.pd-tb-30 {
+  padding: 0.3rem 0;
+}
+.pd-tb-20 {
+  padding: 0.2rem 0;
+}
+
+.pb-40 {
+  padding-bottom: 0.4rem;
+}
+.pl-40 {
+  padding-left: 0.4rem;
+}
+.pl-30 {
+  padding-left: 0.3rem;
+}
 
 /* 外边距 */
 .m-10 {
   margin: 0.1rem;
 }
+.m-lr-20 {
+  margin: 0 0.2rem;
+}
 
 .ml-30 {
   margin-left: 0.3rem;
+}
+.ml-10 {
+  margin-left: 0.1rem;
 }
 .mr-50 {
   margin-right: 0.5rem;
@@ -196,6 +267,9 @@ input.square {
 .fs-12 {
   font-size: 0.24rem;
 }
+.fs-14 {
+  font-size: 0.28rem;
+}
 .fs-16 {
   font-size: 0.32rem;
 }
@@ -218,6 +292,9 @@ input.square {
 }
 .jc-center {
   justify-content: center;
+}
+.jc-space-b {
+  justify-content: space-between;
 }
 .jc-end {
   justify-content: flex-end;
@@ -255,6 +332,9 @@ input.square {
 .lh-60 {
   line-height: 0.6rem;
 }
+.lh-52 {
+  line-height: 0.52rem;
+}
 
 .date-btn {
   padding: 0.06rem;
@@ -263,6 +343,23 @@ input.square {
   text-align: center;
 }
 
+/* 旋转 90 度 */
+.rotate-ne-90 {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
+  -o-transform: rotate(-90deg);
+}
+
+/* 小红点 */
+.red-point {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #e94d4d;
+  border-radius: 50%;
+}
 
 /* 底部 */
 .p-footer .mu-flat-button .mu-button-wrapper {

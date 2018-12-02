@@ -62,6 +62,7 @@ export default {
 .p-header .input-box .square {
   padding-left: 0.6rem;
   font-size: 0.24rem;
+  border: none;
 }
 /* .mu-text-field.mu-input-content > div {
   display: none;
