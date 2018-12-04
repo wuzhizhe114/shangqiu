@@ -1,7 +1,7 @@
 <!-- 底部 -->
 <template>
   <div class="p-footer">
-    <mu-button flat color="primary" :class="selectItem === '0' ? 'index on' : 'index'" to="/" @click="changeItem('0')">
+    <mu-button flat color="primary" :class="selectItem === '0' ? 'index on' : 'index'" to="/index" @click="changeItem('0')">
       <i class="iconfont">{{selectItem === '0' ? '&#xe601;' : '&#xe617;'}}</i>
       <span>首页</span>
     </mu-button>

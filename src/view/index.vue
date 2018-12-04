@@ -173,29 +173,31 @@
       <div class="lh-90 theme-color text-center fs-18">本期信用之星</div>
       <div class="pl-30">
         <div class="first-box">
-          <div class="img-box pr">
-            <img src="../../static/images/index/first_pic.png" class="first-pic" alt>
-            <p class="mock-tips">
-              <span>信用评级：</span>
-              <span class="yellow-color">
-                <i class="iconfont">&#xe6ae;</i>
-                <i class="iconfont">&#xe6ae;</i>
-                <i class="iconfont">&#xe6ae;</i>
-                <i class="iconfont">&#xe6ae;</i>
-                <i class="iconfont">&#xe60c;</i>
-              </span>
-            </p>
-          </div>
-          <div class="lh-90 d-fl">
-            <div class="fl-1">
-              商品数量：
-              <span class="theme-color">30</span>
+          <router-link to="/dianpu">
+            <div class="img-box pr">
+              <img src="../../static/images/index/first_pic.png" class="first-pic" alt>
+              <p class="mock-tips">
+                <span>信用评级：</span>
+                <span class="yellow-color">
+                  <i class="iconfont">&#xe6ae;</i>
+                  <i class="iconfont">&#xe6ae;</i>
+                  <i class="iconfont">&#xe6ae;</i>
+                  <i class="iconfont">&#xe6ae;</i>
+                  <i class="iconfont">&#xe60c;</i>
+                </span>
+              </p>
             </div>
-            <div class="fl-1">
-              <i class="iconfont theme-color">&#xe6a3;</i>
-              <span>3452</span>
+            <div class="lh-90 d-fl">
+              <div class="fl-1">
+                商品数量：
+                <span class="theme-color">30</span>
+              </div>
+              <div class="fl-1">
+                <i class="iconfont theme-color">&#xe6a3;</i>
+                <span>3452</span>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
         <div class="second-third d-fl dash-b-b">
           <div class="second-box fl-1">
@@ -256,7 +258,8 @@
             <div class="fl-1 ml-30">
               <div class="d-fl mb-10">
                 <div class="title fl-1 fs-16">钱大妈</div>
-                <span>商品数量：
+                <span>
+                  商品数量：
                   <span class="theme-color">30</span>
                 </span>
               </div>
@@ -277,7 +280,8 @@
             <div class="fl-1 ml-30">
               <div class="d-fl mb-10">
                 <div class="title fl-1 fs-16">钱大妈</div>
-                <span>商品数量：
+                <span>
+                  商品数量：
                   <span class="theme-color">30</span>
                 </span>
               </div>
@@ -300,6 +304,27 @@
         </div>
       </div>
     </div>
+    <!-- <mu-bottom-sheet :open.sync="open">
+      <div>
+        <p>12313</p>
+      </div>
+    </mu-bottom-sheet> -->
+    <div class="category-popup-bg" v-if="categoryPopup">
+      <div class="category-popup-box pd-lr-30">
+        <div class="lh-90 text-center fs-16 theme-color">
+          <i class="iconfont">&#xe6d0;</i>
+          <span>请选择商品类型</span>
+        </div>
+        <div class="of-hidden">
+          <a href="javascript:;" @click="changeCategoryActive('0')" :class="{'tags-square':true, 'active':categoryActive === '0'}">蔬菜</a>
+          <a href="javascript:;" @click="changeCategoryActive('1')" :class="{'tags-square':true, 'active':categoryActive === '1'}">蔬菜</a>
+          <a href="javascript:;" @click="changeCategoryActive('2')" :class="{'tags-square':true, 'active':categoryActive === '2'}">蔬菜</a>
+          <a href="javascript:;" @click="changeCategoryActive('3')" :class="{'tags-square':true, 'active':categoryActive === '3'}">蔬菜</a>
+          <a href="javascript:;" @click="changeCategoryActive('4')" :class="{'tags-square':true, 'active':categoryActive === '4'}">蔬菜</a>
+          <a href="javascript:;" @click="changeCategoryActive('5')" :class="{'tags-square':true, 'active':categoryActive === '5'}">蔬菜</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -307,7 +332,10 @@
 export default {
   data() {
     return {
-      active: 0
+      active: 0,
+      open: true,
+      categoryActive: '0',
+      categoryPopup: false
     };
   },
 
@@ -320,6 +348,11 @@ export default {
   methods: {
     changeActive(index) {
       this.active = index;
+      // this.categoryPopup = true
+    },
+    changeCategoryActive(param){
+      this.categoryActive = param;
+      this.categoryPopup = false;
     }
   }
 };

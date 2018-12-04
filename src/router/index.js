@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/view/index'
-import regist from '@/view/index/regist'
-import registSuccess from '@/view/index/registSuccess'
-import auditResults from '@/view/index/auditResults'
+
+import login from '@/view/login/login'
+import regist from '@/view/regist/regist'
+import auditResults from '@/view/regist/auditResults' //审核状态
+import registSuccess from '@/view/regist/registSuccess'
 
 import shangpin from '@/view/shangpin/shangpin'
+import dianpu from '@/view/shangpin/dianpu'
+import shangpinIntro from '@/view/shangpin/shangpinIntro'
 import shangpinList from '@/view/shangpin/shangpinList'
 
 import geren from '@/view/geren/geren'
+import myData from '@/view/geren/myData'
+import myEval from '@/view/geren/myEval'
 
 
 Vue.use(Router)
@@ -16,7 +22,21 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path:'/',
+      redirect:'/login'
+    },
+    {
+      path:'/login',
+      name:'login',
+      component: login,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showHeader: false,
+      }
+    },
+    {
+      path: '/index',
       name: 'index',
       component: index,
       meta: {
@@ -27,7 +47,7 @@ export default new Router({
       }
     },
     {
-      path: '/index/regist',
+      path: '/regist',
       name: 'regist',
       component: regist,
       meta: {
@@ -37,7 +57,7 @@ export default new Router({
       }
     },
     {
-      path: '/index/registSuccess',
+      path: '/registSuccess',
       name: 'registSuccess',
       component: registSuccess,
       meta: {
@@ -47,7 +67,7 @@ export default new Router({
       }
     },
     {
-      path: '/index/auditResults',
+      path: '/auditResults',
       name: 'auditResults',
       component: auditResults,
       meta: {
@@ -64,6 +84,28 @@ export default new Router({
       meta: {
         index: 1,
         showFooter: true,
+        showFooterAcitve: '1',
+        showHeader: true
+      }
+    },
+    {
+      path: '/dianpu',
+      name: 'dianpu',
+      component: dianpu,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '1',
+        showHeader: false
+      }
+    },
+    {
+      path: '/shangpinIntro',
+      name: 'shangpinIntro',
+      component: shangpinIntro,
+      meta: {
+        index: 2,
+        showFooter: false,
         showFooterAcitve: '1',
         showHeader: true
       }
@@ -87,6 +129,28 @@ export default new Router({
       meta: {
         index: 1,
         showFooter: true,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    {
+      path: '/geren/myData',
+      name: 'myData',
+      component: myData,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    {
+      path: '/geren/myEval',
+      name: 'myEval',
+      component: myEval,
+      meta: {
+        index: 1,
+        showFooter: false,
         showFooterAcitve: '2',
         showHeader: false
       }

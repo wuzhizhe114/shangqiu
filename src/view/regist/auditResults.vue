@@ -1,9 +1,11 @@
 <!-- 审核结果 -->
 <template>
   <div class="bg-white">
-    <div class="title lh-90 theme-bg text-center color-white fs-18 d-fl">
-      <span class="ml-30">&lt;</span>
-      <span class="fl-1">审核结果</span>
+    <div class="title lh-90 theme-bg text-center color-white fs-18">
+      <a class="ml-30 fl-l" href="javascript:history.back(-1)" >
+        <i class="iconfont">&#xe65b;</i>
+      </a>
+      <span class="pr-50">审核结果</span>
     </div>
     <div class="result-box text-center">
       <p>

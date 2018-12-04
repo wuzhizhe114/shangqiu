@@ -5,6 +5,9 @@
   border-bottom: 1px solid #eee;
   font-size: 0.28rem;
 }
+.mu-tab {
+  min-width: 0.63rem;
+}
 .mu-tab-active {
   color: #fa595e;
 }
@@ -43,10 +46,25 @@
   height: 0.6rem;
   font-size: 0.24rem;
 }
+.mu-raised-button.square {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  border-radius: 3px;
+  border: 1px solid #fa595e;
+  color: #fa595e;
+  background-color: #fff;
+}
+.mu-raised-button.square .mu-button-wrapper {
+  padding: 0 0.2rem;
+
+}
 .mu-raised-button.h42 {
   line-height: 0.42rem;
   height: 0.42rem;
   font-size: 0.24rem;
+}
+a.mu-raised-button.mu-button-full-width {
+  color: #fff;
 }
 
 /* 复选框 */

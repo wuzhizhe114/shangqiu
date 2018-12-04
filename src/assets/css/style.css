@@ -2,7 +2,7 @@
  * @Author: chengh@ebs.org.cn 
  * @Date: 2018-11-22 16:34:18 
  * @Last Modified by: chengh@ebs.org.cn
- * @Last Modified time: 2018-12-02 18:27:07
+ * @Last Modified time: 2018-12-03 22:46:49
  */
 
 p {
@@ -16,6 +16,7 @@ p {
 img {
   width: 100%;
   height: 100%;
+  vertical-align: middle;
 }
 table {
   border-collapse: collapse;
@@ -77,6 +78,9 @@ input.square {
   font-size: 0.24rem;
   color: #999;
 }
+.title > a {
+  color: #fff;
+}
 
 /* 工具类 */
 .theme-color {
@@ -87,6 +91,9 @@ input.square {
   background-color: #fa595e;
 }
 
+.theme-border {
+  border: 1px solid #fa595e;
+}
 .theme-b-b {
   border-bottom: 1px solid #fa595e;
 }
@@ -112,7 +119,7 @@ input.square {
   color: #e5e5e5
 }
 
-.color-white {
+.body .color-white {
   color: #fff;
 }
 .yellow-color {
@@ -126,6 +133,9 @@ input.square {
 }
 .color-blue2 {
   color: #53cad1;
+}
+.color-green {
+  color: #49a81b;
 }
 .color-999 {
   color: #999;
@@ -195,6 +205,9 @@ input.square {
 .pd-30 {
   padding: 0.3rem;
 }
+.pd-t20-l30 {
+  padding: 0.2rem 0.3rem;
+}
 .pd-10 {
   padding: 0.1rem;
 }
@@ -209,8 +222,14 @@ input.square {
   padding: 0.2rem 0;
 }
 
+.pb-80 {
+  padding-bottom: 0.8rem;
+}
 .pb-40 {
   padding-bottom: 0.4rem;
+}
+.pb-20 {
+  padding-bottom: 0.2rem;
 }
 .pl-40 {
   padding-left: 0.4rem;
@@ -218,10 +237,20 @@ input.square {
 .pl-30 {
   padding-left: 0.3rem;
 }
+.pl-20 {
+  padding-left: 0.2rem;
+}
+
+.pr-50 {
+  padding-right: 0.5rem;
+}
 
 /* 外边距 */
 .m-10 {
   margin: 0.1rem;
+}
+.mt-10 {
+  margin-top: 0.1rem;
 }
 .m-lr-20 {
   margin: 0 0.2rem;
@@ -229,6 +258,9 @@ input.square {
 
 .ml-30 {
   margin-left: 0.3rem;
+}
+.ml-24 {
+  margin-left: 0.24rem;
 }
 .ml-10 {
   margin-left: 0.1rem;
@@ -238,6 +270,9 @@ input.square {
 }
 .mr-10 {
   margin-right: 0.1rem;
+}
+.mr-6 {
+  margin-right: 0.06rem;
 }
 
 .mb-178 {
@@ -307,6 +342,9 @@ input.square {
 .fl-l {
   float: left;
 }
+.fl-r {
+  float: right;
+}
 
 /* 盒子内容溢出处理 */
 .of-hidden {
@@ -359,6 +397,60 @@ input.square {
   height: 0.1rem;
   background-color: #e94d4d;
   border-radius: 50%;
+}
+
+/* 商品模糊背景 */
+.mohu-bg-img {
+  background: url('../../../static/images/shangpin/mohu_bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 主题圆角 tag */
+.round-tag {
+  display: inline-block;
+  padding: 0 0.12rem;
+  line-height: 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #fa595e;
+  margin: 0 0.1rem;
+  font-size: 0.24rem;
+}
+
+/* 主题按钮 方形 */
+a.tags-square {
+  display: inline-block;
+  padding: 0 0.24rem;
+  line-height: 0.46rem;
+  border-radius: 4px;
+  border: 1px solid #fa595e;
+  color: #fa595e;
+  margin: 0.2rem;
+}
+a.tags-square.active {
+  background-color: #fa595e;
+  color: #fff;
+}
+
+/* 弹窗 */
+.category-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.category-popup-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92vw;
+  transform: translate(-50% , -60%);
+  background: url('../../../static/images/shangpin/mohu_bg.png') no-repeat #fff;
+  background-size: 100% 100%;
+  border-radius: 3px;
+  padding-bottom: 0.3rem;
 }
 
 /* 底部 */

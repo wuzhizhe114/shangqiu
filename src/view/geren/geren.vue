@@ -12,10 +12,10 @@
         <img src="../../../static/images/geren/erweima.png" class="erweima" alt>
       </div>
       <div class="xiaoxi d-fl color-white text-center pd-lr-30 fs-12">
-        <div class="fl-1">
+        <router-link to="/geren/myEval" class="fl-1 color-white">
           <span>365</span>
           <p>收到评论</p>
-        </div>
+        </router-link>
         <div class="fl-1">
           <span>214</span>
           <p>关注我的</p>
@@ -27,27 +27,34 @@
       </div>
     </div>
     <div class="operate1 bg-white box-sh mb-20">
-      <div class="item d-fl pd-tb-20 gray-b-b2">
-        <i class="iconfont color-blue mr-10">&#xe64e;</i>
-        <span>消息通知</span>
-        <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end">您有5条新消息
-          <i class="red-point ml-10"></i>
-        </span>
-        <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+      <div class="item gray-b-b2">
+        <router-link to class="d-fl pd-tb-20">
+          <i class="iconfont color-blue mr-10">&#xe64e;</i>
+          <span>消息通知</span>
+          <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end">
+            您有5条新消息
+            <i class="red-point ml-10"></i>
+          </span>
+          <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+        </router-link>
       </div>
-      <div class="item d-fl pd-tb-20">
-        <i class="iconfont yellow-color mr-10">&#xe611;</i>
-        <span>信用档案</span>
-        <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end"></span>
-        <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+      <div class="item">
+        <router-link to class="d-fl pd-tb-20">
+          <i class="iconfont yellow-color mr-10">&#xe611;</i>
+          <span>信用档案</span>
+          <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end"></span>
+          <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+        </router-link>
       </div>
     </div>
     <div class="operate2 bg-white fl-1 box-sh">
-      <div class="item d-fl pd-tb-20 gray-b-b2">
-        <i class="iconfont theme-color mr-10">&#xe6d7;</i>
-        <span>我的资料</span>
-        <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end"></span>
-        <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+      <div class="item gray-b-b2">
+        <router-link to="/geren/myData" class="d-fl pd-tb-20">
+          <i class="iconfont theme-color mr-10">&#xe6d7;</i>
+          <span>我的资料</span>
+          <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end"></span>
+          <i class="iconfont rotate-ne-90 fs-16">&#xe9fd;</i>
+        </router-link>
       </div>
       <div class="item d-fl pd-tb-20 gray-b-b2">
         <i class="iconfont color-blue2 mr-10">&#xe79a;</i>

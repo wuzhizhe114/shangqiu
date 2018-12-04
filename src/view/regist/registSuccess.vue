@@ -1,9 +1,11 @@
 <!-- registSuccess -->
 <template>
   <div>
-    <div class="title lh-90 theme-bg text-center color-white fs-18 d-fl">
-      <span class="ml-30">&lt;</span>
-      <span class="fl-1">注册成功</span>
+    <div class="title lh-90 theme-bg text-center color-white fs-18 of-hidden">
+      <a class="ml-30 fl-l" href="javascript:history.back(-1)">
+        <i class="iconfont">&#xe65b;</i>
+      </a>
+      <p class="pr-50">注册成功</p>
     </div>
     <div class="success-box text-center">
       <p>

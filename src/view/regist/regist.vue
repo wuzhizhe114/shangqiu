@@ -1,7 +1,12 @@
 <!-- regist -->
 <template>
   <div class="regist d-fl fl-col">
-    <div class="header lh-90 text-center theme-bg color-white fs-18">注册</div>
+    <div class="title lh-90 theme-bg text-center color-white fs-18 of-hidden">
+      <a class="ml-30 fl-l" href="javascript:history.back(-1)">
+        <i class="iconfont">&#xe65b;</i>
+      </a>
+      <p class="pr-50">注册</p>
+    </div>
     <section>
       <mu-tabs :value.sync="tabActive" color="#fbfbfb" indicator-color="#fa595e" full-width>
         <mu-tab>商户注册</mu-tab>
