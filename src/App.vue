@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p-header v-show="$route.meta.showHeader"></p-header>
+    <!-- <p-header v-show="$route.meta.showHeader"></p-header> -->
     <router-view class="body"></router-view>
     <p-footer v-show="$route.meta.showFooter" :activeItem="$route.meta.showFooterActive"></p-footer>
   </div>

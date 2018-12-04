@@ -2,7 +2,7 @@
  * @Author: chengh@ebs.org.cn 
  * @Date: 2018-11-22 16:34:18 
  * @Last Modified by: chengh@ebs.org.cn
- * @Last Modified time: 2018-12-03 22:46:49
+ * @Last Modified time: 2018-12-04 20:07:33
  */
 
 p {
@@ -225,11 +225,17 @@ input.square {
 .pb-80 {
   padding-bottom: 0.8rem;
 }
+.pb-60 {
+  padding-bottom: 0.6rem;
+}
 .pb-40 {
   padding-bottom: 0.4rem;
 }
 .pb-20 {
   padding-bottom: 0.2rem;
+}
+.pl-50 {
+  padding-left: 0.5rem;
 }
 .pl-40 {
   padding-left: 0.4rem;
@@ -246,6 +252,9 @@ input.square {
 }
 
 /* 外边距 */
+.m-tb-20 {
+  margin: 0.2rem 0;
+}
 .m-10 {
   margin: 0.1rem;
 }
@@ -254,6 +263,9 @@ input.square {
 }
 .m-lr-20 {
   margin: 0 0.2rem;
+}
+.m-lr-30 {
+  margin: 0 0.3rem;
 }
 
 .ml-30 {
@@ -314,6 +326,9 @@ input.square {
 .fs-22 {
   font-size: 0.44rem;
 }
+.fs-it {
+  font-style: italic;
+}
 
 /* 弹性盒子 */
 .d-fl {
@@ -362,6 +377,9 @@ input.square {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.text-inden {
+  text-indent: 2em;
 }
 
 .lh-90 {

@@ -2,16 +2,16 @@
 <template>
   <div class="p-footer">
     <mu-button flat color="primary" :class="selectItem === '0' ? 'index on' : 'index'" to="/index" @click="changeItem('0')">
-      <i class="iconfont">{{selectItem === '0' ? '&#xe601;' : '&#xe617;'}}</i>
-      <span>首页</span>
+      <i class="iconfont fs-18">&#xe637;</i>
+      <span>店铺信用</span>
     </mu-button>
     <mu-button flat color="primary" :class="selectItem === '1' ? 'shanghu on' : 'shanghu'" to="/shangpin" @click="changeItem('1')">
-      <i class="iconfont">{{selectItem === '1' ? '&#xe615;' : '&#xe7e8;'}}</i>
-      <span>商品</span>
+      <i class="iconfont">&#xe62a;</i>
+      <span>商品管理</span>
     </mu-button>
     <mu-button flat color="primary" :class="selectItem === '2' ? 'person on' : 'person'" to="/geren" @click="changeItem('2')">
-      <i class="iconfont">{{selectItem === '2' ? '&#xe62b;' : '&#xe607;'}}</i>
-      <span>个人</span>
+      <i class="iconfont">&#xe62d;</i>
+      <span>个人中心</span>
     </mu-button>
   </div>
 </template>
@@ -86,6 +86,6 @@ export default {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 </style>

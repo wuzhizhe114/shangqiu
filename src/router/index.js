@@ -3,9 +3,12 @@ import Router from 'vue-router'
 import index from '@/view/index'
 
 import login from '@/view/login/login'
-import regist from '@/view/regist/regist'
+import regist from '@/view/regist/newRegist'
 import auditResults from '@/view/regist/auditResults' //审核状态
 import registSuccess from '@/view/regist/registSuccess'
+import hetongqianshu from '@/view/regist/hetongqianshu' //合同签署
+
+import merchantEntry from '@/view/MerchantEntry/index' 
 
 import shangpin from '@/view/shangpin/shangpin'
 import dianpu from '@/view/shangpin/dianpu'
@@ -15,6 +18,7 @@ import shangpinList from '@/view/shangpin/shangpinList'
 import geren from '@/view/geren/geren'
 import myData from '@/view/geren/myData'
 import myEval from '@/view/geren/myEval'
+import contract from '@/view/geren/contract' // 合同内容
 
 
 Vue.use(Router)
@@ -57,6 +61,16 @@ export default new Router({
       }
     },
     {
+      path: '/merchantEntry',
+      name: 'merchantEntry',
+      component: merchantEntry,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showHeader: false
+      }
+    },
+    {
       path: '/registSuccess',
       name: 'registSuccess',
       component: registSuccess,
@@ -70,6 +84,16 @@ export default new Router({
       path: '/auditResults',
       name: 'auditResults',
       component: auditResults,
+      meta: {
+        index: 2,
+        showFooter: false,
+        showHeader: false
+      }
+    },
+    {
+      path: '/hetongqianshu', //合同签署
+      name: 'hetongqianshu',
+      component: hetongqianshu,
       meta: {
         index: 2,
         showFooter: false,
@@ -148,6 +172,17 @@ export default new Router({
       path: '/geren/myEval',
       name: 'myEval',
       component: myEval,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    {
+      path: '/geren/contract',
+      name: 'contract',
+      component: contract,
       meta: {
         index: 1,
         showFooter: false,
