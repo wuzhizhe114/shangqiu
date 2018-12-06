@@ -39,7 +39,7 @@
         </router-link>
       </div>
       <div class="item">
-        <router-link to class="d-fl pd-tb-20">
+        <router-link to="/geren/shopDiagnosis" class="d-fl pd-tb-20">
           <i class="iconfont yellow-color mr-10">&#xe611;</i>
           <span>信用档案</span>
           <span class="fl-1 text-right mr-10 fs-12 gray-color d-fl al-center jc-end"></span>

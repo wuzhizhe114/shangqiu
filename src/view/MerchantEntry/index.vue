@@ -186,7 +186,7 @@
                         市场联系方式：
                         <span class="red">07558623758</span>
                     </p>
-                    <mu-button class="login_item_btn item_btn">签署合同</mu-button>
+                    <mu-button class="login_item_btn item_btn" to="/hetongqianshu">签署合同</mu-button>
                 </div>
             </div>
         </div>

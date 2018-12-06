@@ -5,6 +5,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import LyTab from 'ly-tab'
+
+
 import MuseUI from 'muse-ui'; // ui 框架
 import Message from 'muse-ui-message'; // 弹窗
 import 'muse-ui/dist/muse-ui.css';
@@ -16,6 +19,7 @@ import '@/assets/css/style.css';
 // 挂载
 Vue.use(MuseUI);
 Vue.use(Message);
+Vue.use(LyTab)
 
 // 新增主题
 theme.add('teal', {

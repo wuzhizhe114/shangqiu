@@ -161,7 +161,7 @@
     .password {
         display: inline-block;
         width: 80%;
-        background-color: #ff000000;
+        background-color: rgba(0, 0, 0, 0);
     }
     .usrname_box {
         display: inline-block;

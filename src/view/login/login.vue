@@ -14,7 +14,7 @@
     <div v-if="!IsshowBg">
       <!-- 顶部 -->
       <div class="title lh-90 theme-bg text-center color-white fs-18 of-hidden top_col">
-        <a class="ml-30 fl-l" href="javascript:history.back(-1)">
+        <a class="ml-30 fl-l" @click="goBackLogin">
           <i class="iconfont">&#xe65b;</i>
         </a>
         <p class="pr-50" >登录</p>
@@ -74,6 +74,9 @@
           password: '',
           isAgree: false
         };
+      },
+      goBackLogin(){
+        this.IsshowBg = true;
       }
     }
   }
@@ -109,7 +112,7 @@
     border: 1px solid #fa595e;
     color: #f9585e;
     margin-bottom: 20px;
-    background-color: #f3f4ef2e;
+    background-color: rgba(0, 0, 0, 0);
   }
   .login_item_btn {
     width: 80%;
@@ -164,7 +167,7 @@
   .password {
     display: inline-block;
     width: 80%;
-    background-color: #ff000000;
+    background-color: rgba(0, 0, 0, 0);
   }
   .usrname_box {
     display: inline-block;

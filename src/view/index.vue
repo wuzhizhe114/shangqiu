@@ -17,6 +17,10 @@
             </span>
           </p>
         </div>
+        <div class="text-center" @click="tianzhuanPaihang">
+          <span class="fs-it fs-18">3</span><img src="../../static/images/index/shangshen.png" class="paiming" alt="" srcset="">
+        <p>信用排名</p>
+        </div>
       </div>
       <div class="d-fl jc-space-b text-center">
         <div>
@@ -150,11 +154,19 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    tianzhuanPaihang(){
+      this.$router.push('/paihang')
+    }
+  }
 };
 </script>
 
 <style scoped>
+.paiming {
+  width: 0.5rem;
+  height: 0.4rem;
+}
 .index a {
   color: #969696;
 }

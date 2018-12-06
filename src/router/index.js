@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/view/index'
+import paihang from '@/view/paihang'
 
 import login from '@/view/login/login'
 import regist from '@/view/regist/newRegist'
@@ -19,11 +20,15 @@ import geren from '@/view/geren/geren'
 import myData from '@/view/geren/myData'
 import myEval from '@/view/geren/myEval'
 import contract from '@/view/geren/contract' // 合同内容
+import contractBlue from '@/view/geren/contractBlue' // 合同内容
+import shopDiagnosis from '@/view/geren/ShopDiagnosis' // 合同内容
+import ShopDiagnosisBlue from '@/view/geren/ShopDiagnosisBlue' // 合同内容
 
 
 Vue.use(Router)
 
 export default new Router({
+  // mode: 'history',
   routes: [
     {
       path:'/',
@@ -48,6 +53,17 @@ export default new Router({
         showFooter: true,
         showFooterAcitve: '0',
         showHeader: true,
+      }
+    },
+    {
+      path: '/paihang',
+      name: 'paihang',
+      component: paihang,
+      meta: {
+        index: 0,
+        showFooter: false,
+        showFooterAcitve: '0',
+        showHeader: false,
       }
     },
     {
@@ -190,5 +206,39 @@ export default new Router({
         showHeader: false
       }
     },
+    {
+      path: '/geren/contractblue',
+      name: 'contractBlue',
+      component: contractBlue,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    {
+      path: '/geren/shopDiagnosis',
+      name: 'shopDiagnosis',
+      component: shopDiagnosis,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    {
+      path: '/geren/shopdiagnosisblue',
+      name: 'ShopDiagnosisBlue',
+      component: ShopDiagnosisBlue,
+      meta: {
+        index: 1,
+        showFooter: false,
+        showFooterAcitve: '2',
+        showHeader: false
+      }
+    },
+    
   ]
 })

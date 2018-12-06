@@ -53,9 +53,9 @@ export default {
   methods: {
     showToast(){
       this.$alert('签署成功！', '温馨提示', {
-        okLabel: '去登录'
+        okLabel: '完成'
       }).then(() => {
-        this.$router.push('/login')
+        this.$router.push('/index')
       });
     }
   }
